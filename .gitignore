@@ -1,2 +1,4 @@
 *.png
 *.wav
+predict/weather.tle
+predict/weather.txt
