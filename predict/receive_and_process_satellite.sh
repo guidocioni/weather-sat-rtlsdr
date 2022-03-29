@@ -7,7 +7,7 @@
 # $5 = EPOC start time
 # $6 = Time to capture
 
-timeout $6 rtl_fm -d 00000978 -f ${2}M -s 48k -g 35 -p 68 -E dc -A fast -F 9 - | sox -t raw -r 48000 -es -b16 -c1 -V1 - $3.wav rate 11025 
+timeout $6 rtl_fm -d 00000978 -f ${2}M -s 48k -g 37 -p 5 -E dc -A fast -F 9 - | sox -t raw -r 48000 -es -b16 -c1 -V1 - $3.wav rate 11025 
 
 PassStart=`expr $5 + 90`
 
