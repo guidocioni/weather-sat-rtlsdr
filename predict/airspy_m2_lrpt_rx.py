@@ -31,7 +31,7 @@ class top_block(gr.top_block):
         # Variables
         ##################################################
         self.samp_rate_airspy = samp_rate_airspy = 3000000
-        self.decim = decim = 16
+        self.decim = decim = 8
         self.symb_rate = symb_rate = 72000
         self.samp_rate = samp_rate = samp_rate_airspy/decim
         self.sps = sps = (samp_rate*1.0)/(symb_rate*1.0)
@@ -40,6 +40,7 @@ class top_block(gr.top_block):
         self.clock_alpha = clock_alpha = 0.001
         #self.bitstream_name = bitstream_name = "/home/pi/weather/meteor_LRPT_" + datetime.now().strftime("%d%m%Y_%H%M") + ".s"
         self.bitstream_name = bitstream_name = sys.argv[4] + ".s"
+        # self.bitstream_name = bitstream_name = "test.s"
 
         ##################################################
         # Blocks
